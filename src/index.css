@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Georgia", ui-serif, serif;
+}
+
+/* Editorial Aesthetic Atmosphere Gradients - Clear Sky Blue & Sunny Glow */
+.editorial-atmosphere {
+  background: #f0f9ff;
+  background: radial-gradient(circle at 80% 20%, rgba(253, 224, 71, 0.4) 0%, transparent 45%),
+              radial-gradient(circle at 20% 80%, rgba(14, 165, 233, 0.25) 0%, transparent 60%),
+              #f0f9ff;
+}
+
+/* Sleek thin borders & glass containers on light background */
+.editorial-glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(14, 165, 233, 0.06);
+}
+
+.editorial-divider {
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+/* Giant Headline Temperature Display on Bright Background */
+.editorial-temp-display {
+  font-size: clamp(6rem, 16vw, 15rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  background: linear-gradient(to bottom, #0f172a 40%, rgba(15, 23, 42, 0.6) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Layout helpers */
+.editorial-letter-spaced {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+/* Custom scrollbars for clean list elements */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.15);
+  border-radius: 9999px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
